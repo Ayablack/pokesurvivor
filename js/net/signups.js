@@ -71,7 +71,7 @@ G.Signups = (() => {
   /** Nombre del mes siguiente (para el aviso). */
   function nextMonthName() {
     const d = new Date(); d.setMonth(d.getMonth() + 1, 1);
-    const locale = { en: 'en-US', fr: 'fr-FR' }[G.I18n && G.I18n.lang] || 'es-ES';
+    const locale = { en: 'en-US', fr: 'fr-FR', pt: 'pt-BR' }[G.I18n && G.I18n.lang] || 'es-ES';
     return d.toLocaleString(locale, { month: 'long' });
   }
 
